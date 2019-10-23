@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://gphotos--.local.rikmeijer.nl'),
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -165,6 +165,8 @@ return [
         /*
          * Package Service Providers...
          */
+
+        Revolution\Google\Photos\Providers\PhotosServiceProvider::class,
 
         /*
          * Application Service Providers...
